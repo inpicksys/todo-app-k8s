@@ -1,9 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
+
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Todo } from './todo';
+import { Observable } from 'rxjs';
 
-const BASE_PATH = '/local_server/api/v1';
+const BASE_PATH = '/api/v1';
 
 @Injectable()
 export class TodoService {
